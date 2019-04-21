@@ -7,7 +7,7 @@ class Window(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.title = "PyQt5 Demo"
+        self.title = "PyQt5 Plain TextEdit"
         self.top = 200
         self.left = 500
         self.width = 400
@@ -18,8 +18,7 @@ class Window(QWidget):
 
 
     def InitWindow(self):
-	# self.setWindowIcon(QtGui.QIcon("prosenjit.jpg"))
-        self.setWindowIcon(QtGui.QIcon("image/prosenjit.ico"))
+        self.setWindowIcon(QtGui.QIcon("icon.png"))
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
@@ -35,6 +34,8 @@ class Window(QWidget):
         plainText.appendPlainText(text)
 
         plainText.setUndoRedoEnabled(False)
+
+
 
 
 
